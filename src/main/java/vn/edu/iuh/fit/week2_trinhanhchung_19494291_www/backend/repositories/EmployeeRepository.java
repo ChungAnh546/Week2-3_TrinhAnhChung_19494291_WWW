@@ -1,10 +1,10 @@
-package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.repositories;
+package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.repositories;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
-import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.enums.EmployeeStatus;
-import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.models.Employee;
+import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.enums.EmployeeStatus;
+import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models.Employee;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.pks;
+package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.pks;
 
 import jakarta.persistence.Embeddable;
 import lombok.Data;

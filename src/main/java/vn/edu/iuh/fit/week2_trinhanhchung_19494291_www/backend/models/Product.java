@@ -1,15 +1,17 @@
-package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.models;
+package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models;
 
 import jakarta.persistence.*;
 
 import lombok.Data;
-import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.enums.ProductStatus;
+import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.enums.ProductStatus;
 
 import java.util.List;
 
 @Entity
 @Table(name = "product")
-
+@NamedQueries(
+        @NamedQuery(name = "Product.findAll",query = "select p from Product p where p.status = 1")
+)
 @Data
 public class Product {
     @Id

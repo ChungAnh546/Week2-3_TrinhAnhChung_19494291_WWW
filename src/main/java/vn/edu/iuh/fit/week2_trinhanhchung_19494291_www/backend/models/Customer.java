@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.models;
+package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,7 +8,9 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "customer")
-
+@NamedQueries(
+        @NamedQuery(name = "Customer.findAll",query = "select c from Customer c")
+)
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

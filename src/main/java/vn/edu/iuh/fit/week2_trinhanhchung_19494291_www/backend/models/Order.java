@@ -1,4 +1,4 @@
-package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.models;
+package vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -11,6 +11,9 @@ import java.util.List;
     @Entity
     @Table(name = "orders")
 
+    @NamedQueries(
+            @NamedQuery(name = "Order.findAll",query = "select o from Order o")
+    )
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
