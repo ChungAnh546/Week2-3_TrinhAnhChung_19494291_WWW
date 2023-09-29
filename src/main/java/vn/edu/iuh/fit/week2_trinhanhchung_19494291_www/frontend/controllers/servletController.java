@@ -5,7 +5,8 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models.Employee;
+
+import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.frontend.model.EmployeeModel;
 
 import java.io.IOException;
 
@@ -20,7 +21,15 @@ public class servletController extends HttpServlet {
                 String action = actionObject.toString();
                 if(action.equals("insertEmployee")){
 
-                    EmployeeModel
+                    EmployeeModel model = new EmployeeModel();
+                    model.insertEmployee(req,resp);
+
+                } else if (action.equals("updateEmployee") ){
+                    EmployeeModel model = new EmployeeModel();
+                    model.updateEmployee(req,resp);
+                } else if (action.equals("deleteEmployee")) {
+                    EmployeeModel model = new EmployeeModel();
+                    ///
                 }
             }
 

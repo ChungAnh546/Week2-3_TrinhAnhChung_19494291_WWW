@@ -22,4 +22,17 @@ private final EmployeeService services= new EmployeeService();
         resp.sendRedirect("");
 
     }
+    public void updateEmployee(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+        String full_name = req.getParameter("full_name");
+        String dob1 = req.getParameter("dob");
+        DateTime dob = new DateTime(dob1);
+        String email = req.getParameter("email");
+        String phone = req.getParameter("phone");
+        String address = req.getParameter("address");
+        String status = req.getParameter("status");
+        Employee e = new Employee(full_name,dob,email,phone,address, EmployeeStatus.valueOf(status));
+        services.updateEmployee(e);
+        resp.sendRedirect("");
+
+    }
 }

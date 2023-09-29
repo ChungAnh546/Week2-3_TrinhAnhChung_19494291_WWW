@@ -36,4 +36,12 @@ public class Employee {
     private List<Order> LstOrder;
 
 
+    public Employee(String fullName, DateTime dob, String email, String phone, String address, EmployeeStatus status) {
+        this.fullname = fullName;
+        this.dob = dob;
+        this.email = email;
+        this.phone = phone;
+        this.address = address;
+        this.status = status;
+    }
 }

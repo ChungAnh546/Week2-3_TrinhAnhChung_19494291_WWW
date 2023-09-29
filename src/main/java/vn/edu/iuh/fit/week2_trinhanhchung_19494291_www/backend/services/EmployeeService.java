@@ -18,12 +18,18 @@ public class EmployeeService {
         repository.insertEmployee(employee);
     }
 
+    public void updateEmployee(Employee employee) {
+        repository.updateEmployee(employee);
+    }
+
     public Optional<Employee> findById(long id) {
         return repository.findById(id);
     }
+
     public List<Employee> getAll() {
         return repository.getAllEmployee();
     }
+
     public boolean delete(long id) {
         Optional<Employee> op = findById(id);
         if (op.isPresent()) {
@@ -36,8 +42,7 @@ public class EmployeeService {
 
     public boolean activeEmployee(long id) {
         Optional<Employee> op = findById(id);
-        if(op.isPresent())
-        {
+        if (op.isPresent()) {
             Employee employee = op.get();
             employee.setStatus(EmployeeStatus.ACTIVE);
             return true;
