@@ -23,7 +23,7 @@ public class CustomerRepository {
        em.persist(c);
     }
 
-    public void update(Customer c) {
+    public void updateCustomer(Customer c) {
         em.merge(c);
     }
     public Optional<Customer> findById(long id){

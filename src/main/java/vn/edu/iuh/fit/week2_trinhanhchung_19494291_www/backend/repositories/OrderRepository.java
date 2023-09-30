@@ -4,15 +4,14 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
 import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models.Order;
-import vn.edu.iuh.fit.week2_trinhanhchung_19494291_www.backend.models.Order;
 
 import java.util.List;
 import java.util.Optional;
 
-public class orderRepository {
+public class OrderRepository {
     private EntityManager em;
 
-    public orderRepository() {
+    public OrderRepository() {
         em = Persistence
                 .createEntityManagerFactory("mysql")
                 .createEntityManager();
