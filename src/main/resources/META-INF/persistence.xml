@@ -3,19 +3,38 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
              version="3.0">
-    <persistence-unit name="mysql" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="mysqlcc" transaction-type="RESOURCE_LOCAL">
+        <!--        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>-->
+        <!--        <exclude-unlisted-classes>false</exclude-unlisted-classes>-->
 
-            <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-            <properties>
-                <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
-                <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mydb" />
-                <property name="javax.persistence.jdbc.user" value="root" />
-                <property name="javax.persistence.jdbc.password" value="432001" />
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
-                <!-- Additional properties -->
-                <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
-                <property name="hibernate.hbm2ddl.auto" value="update" />
-            </properties>
+        <class>vn.edu.iuh.fit.backend.models.Product</class>
+        <class>vn.edu.iuh.fit.backend.models.OrderDetail</class>
+        <class>vn.edu.iuh.fit.backend.models.Order</class>
+        <class>vn.edu.iuh.fit.backend.models.ProductPrice</class>
+        <class>vn.edu.iuh.fit.backend.models.Customer</class>
+        <class>vn.edu.iuh.fit.backend.models.Employee</class>
+        <class>vn.edu.iuh.fit.backend.models.ProductImage</class>
+
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/week2?createDatabaseIfNotExist=true"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="432001"/>
+<!--            <property name="jakarta.persistence.schemageneration.database.action" value="create"/>-->
+
+<!--            &lt;!&ndash; Additional properties &ndash;&gt;-->
+<!--            <property name="hibernate.archive.autodetection" value="class"/>-->
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <!--show query-->
+            <property name="eclipselink.logging.level.sql" value="FINE"/>
+            <property name="eclipselink.logging.parameters" value="true"/>
+
+        </properties>
 
     </persistence-unit>
 </persistence>
