@@ -27,6 +27,9 @@ public class CustomerService {
         return repository.getAllCustomer();
     }
 
+    public void insertCust(Customer customer) {
+    }
+
 //    public boolean delete(long id) {
 //        Optional<Customer> op = findById(id);
 //        if (op.isPresent()) {

@@ -12,7 +12,7 @@ import jakarta.servlet.annotation.*;
 public class HelloServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String newPage = "/helloCC.jsp"; // Địa chỉ trang muốn chuyển đến
+        String newPage = ""; // Địa chỉ trang muốn chuyển đến
         response.sendRedirect(request.getContextPath() + newPage);
     }
 

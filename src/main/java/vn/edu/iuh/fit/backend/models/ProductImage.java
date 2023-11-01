@@ -19,7 +19,7 @@ public class ProductImage {
     private long product_id;
     @Column(name = "path")
     private String path;
-    @Column(name = "alternavtive")
+    @Column(name = "alternative")
     private String alternative;
     @ManyToOne
     @JoinColumn(name = "product_id")

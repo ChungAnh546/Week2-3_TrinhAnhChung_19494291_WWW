@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="vn.edu.iuh.fit.backend.models.ProductEntity">
+        <table name="product" schema="week2" catalog=""/>
+        <attributes>
+            <id name="productId">
+                <column name="product_id"/>
+            </id>
+            <basic name="name">
+                <column name="name"/>
+            </basic>
+            <basic name="description">
+                <column name="description"/>
+            </basic>
+            <basic name="unit">
+                <column name="unit"/>
+            </basic>
+            <basic name="manufacturerName">
+                <column name="manufacturer_name"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

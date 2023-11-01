@@ -7,6 +7,7 @@ import jakarta.persistence.Persistence;
 import jakarta.persistence.TypedQuery;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import vn.edu.iuh.fit.backend.enums.ProductStatus;
 import vn.edu.iuh.fit.backend.models.Product;
 
 import java.util.List;
@@ -59,5 +60,19 @@ public class ProductRepository {
 
     public List<Product> getAllProduct(){
         return em.createNamedQuery("Product.findAll",Product.class).getResultList();
+    }
+    public void updateStatus(long id, ProductStatus status) {
+        TypedQuery<Product> q = em.createNamedQuery("Product.findById", Product.class)
+                .setParameter(1, id);
+        Product product = q.getSingleResult();
+        product.setStatus(status);
+        try {
+            trans.begin();
+            em.merge(product);
+            trans.commit();
+        } catch (Exception e) {
+            trans.rollback();
+            logger.error(e.getMessage());
+        }
     }
 }

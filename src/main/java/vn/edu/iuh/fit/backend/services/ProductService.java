@@ -7,7 +7,7 @@ import vn.edu.iuh.fit.backend.repositories.ProductRepository;
 import java.util.List;
 import java.util.Optional;
 
-public class ProductService {
+public class    ProductService {
     private ProductRepository repository;
     public ProductService(){
         repository = new ProductRepository();
@@ -46,5 +46,8 @@ public class ProductService {
             return true;
         }
         return false;
+    }
+    public void updateStatus(long id, ProductStatus status) {
+        repository.updateStatus(id,status);
     }
 }
