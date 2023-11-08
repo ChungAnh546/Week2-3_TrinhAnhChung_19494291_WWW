@@ -6,14 +6,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 import vn.edu.iuh.fit.frontend.model.CustomerModel;
 import vn.edu.iuh.fit.frontend.model.EmployeeModel;
 import vn.edu.iuh.fit.frontend.model.ProductModel;
 
-
 import java.io.IOException;
-import java.util.List;
 
 @WebServlet("/controls")
 public class ServletController extends HttpServlet {

@@ -12,8 +12,8 @@
 </head>
 <body>
 <a href="insertEmployee.jsp">Insert new Employee</a> <br/>
-<a href="controls?action=cust_list">Customer listing</a>
-<a href="products.jsp">Product listing</a>
+<a href="controls?action=cust_list">Customer listing</a><br/>
+<a href="products.jsp">Product listing</a><br/>
 <br/>
 ...
 </body>
