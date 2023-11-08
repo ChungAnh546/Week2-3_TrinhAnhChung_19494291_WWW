@@ -14,4 +14,5 @@
 
 **delete**
 change state to -1 
->![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/13336b9a-b9f5-489b-9d0d-5209b4c3472b)
+>![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/ba21b861-e05d-4f2b-b68f-f58d553dde5b)
+
