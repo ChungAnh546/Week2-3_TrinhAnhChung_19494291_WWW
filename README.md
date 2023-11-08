@@ -11,3 +11,7 @@
 
 **update**
 >![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/1dcd708f-7fef-473e-b906-6833589433b2)
+
+**delete**
+change state to -1 
+>![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/13336b9a-b9f5-489b-9d0d-5209b4c3472b)
