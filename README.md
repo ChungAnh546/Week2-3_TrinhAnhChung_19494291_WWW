@@ -1,5 +1,11 @@
 # Week2-3_TrinhAnhChung_19494291_WWW
-## Model
+### Information:
+Name: Trịnh Anh Chung
+Mssv: 19494291
+### Description:
+Request: Develop a blog website using Spring Boot.
+
+## Database
 >![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/1c7fd2db-77d3-4f97-9fdc-93fb95d72939)
 ## Pages
 
@@ -16,3 +22,9 @@
 change state to -1 
 >![image](https://github.com/ChungAnh546/Week2-3_TrinhAnhChung_19494291_WWW/assets/92380932/ba21b861-e05d-4f2b-b68f-f58d553dde5b)
 
+## The tools that have been used
+- IDE: IntelliJ
+- Framework: Spring Boot
+- Web server: Tomcat
+- Database server: MySQL
+- Code storage: GitHub
